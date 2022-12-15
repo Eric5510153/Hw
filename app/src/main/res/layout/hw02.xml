@@ -31,20 +31,15 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
 
-    <RelativeLayout
-        android:id="@+id/layout02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageview_01"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp">
+
 
         <TextView
-
+            android:layout_below="@+id/imageview_01"
+            android:layout_marginTop="20dp"
             android:id="@+id/textView_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
+            android:layout_marginLeft="20dp"
             android:text="帳號:"
             android:textColor="#000000"
             android:textSize="18sp" />
@@ -64,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView_account"
-            android:layout_marginLeft="0dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:text="密碼:"
             android:textColor="#000000"
@@ -80,15 +75,16 @@
             android:inputType="textPassword"
             android:textSize="18sp" />
 
-    </RelativeLayout>
+
 
     <RadioGroup
         android:id="@+id/group_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layout02"
+        android:layout_below="@id/textView_password"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
+
         android:orientation="horizontal"
         >
 

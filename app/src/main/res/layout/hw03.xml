@@ -29,19 +29,18 @@
         android:src="@drawable/image01"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_01"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView_01" />
 
 
     <TextView
         android:id="@+id/textView_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:text="帳號:"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageview_01" />
 
@@ -55,15 +54,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView_account"
         app:layout_constraintStart_toEndOf="@+id/textView_account"
         app:layout_constraintTop_toTopOf="@+id/textView_account" />
+
     <TextView
         android:id="@+id/textView_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:text="密碼:"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_account" />
 
@@ -78,47 +78,50 @@
         app:layout_constraintStart_toEndOf="@+id/textView_password"
         app:layout_constraintTop_toTopOf="@+id/textView_password" />
 
-    <RadioButton
-
-        android:id="@+id/radioButton"
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="學生"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="65dp"
+        android:layout_gravity="center_horizontal"
+android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_password" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_password">
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="教師"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        app:layout_constraintTop_toTopOf="@+id/radioButton"
-         />
+        <RadioButton
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="職工"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton2"
-        app:layout_constraintStart_toEndOf="@+id/radioButton2"
-        app:layout_constraintTop_toTopOf="@+id/radioButton2"
-         />
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="學生"
+            android:textColor="#000000"
+            android:textSize="18sp"
 
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="教師"
+            android:textColor="#000000"
+            android:textSize="18sp"
+
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="職工"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </RadioGroup>
     <Button
         android:id="@+id/btn_a"
         android:layout_width="wrap_content"
